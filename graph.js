@@ -1,11 +1,13 @@
 /// <reference path="./typings/main.d.ts" />
 // Rohit Falor
-// graph.ts
+// graph.js
 // A graph class implemented in JavaScript
 // Last modified: 2/21/2016
+
 //DECLARE VARS
 var friends;
 var fileName = "data.txt";
+
 //CLASS DEFINITIONS
 //abstraction of queue data type
 var Queue = (function () {
@@ -23,6 +25,7 @@ var Queue = (function () {
     };
     return Queue;
 })();
+
 //represents a graph node (a student)
 var GraphNode = (function () {
     function GraphNode(value, visited) {
@@ -32,6 +35,7 @@ var GraphNode = (function () {
     }
     return GraphNode;
 })();
+
 //represents a graph (network of students)
 var Graph = (function () {
     function Graph(edges) {
@@ -117,6 +121,7 @@ var Graph = (function () {
     };
     return Graph;
 })();
+
 //HELPERS
 //read data from file on load
 (function () {
@@ -141,6 +146,7 @@ var Graph = (function () {
         console.log("Sorry, the file cannot be read");
     });
 }());
+
 //MAIN
 //graph queries & results
 function main() {
