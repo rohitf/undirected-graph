@@ -1,7 +1,5 @@
 # undirected-graph
-This creates a simple undirected graph in JavaScript.
+This creates a simple undirected graph in JavaScript / NodeJS. It also implements
+certain operations such as breadth-first-search and finding the number of distinct groups.
 
-Implements an undirected graph using JavaScript / NodeJS and implements
-certain operations such as breadth-first-search, etc.
-
-Graph is created from edges in data.txt files (edge pairs).
+The Graph is created from edges in the data.txt file (vertex pairs).
