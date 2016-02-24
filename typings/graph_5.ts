@@ -2,9 +2,8 @@
 
 // Rohit Falor
 // graph.ts
-// JavaScript
-// A basic graph class to create an undirected, unweighted graph.
-// Last modified: 2/23/2016
+// A graph class implemented in JavaScript
+// Last modified: 2/21/2016
 
 //DECLARE VARS
 var friends: Graph;
@@ -182,5 +181,5 @@ function main(){
   }
 
   var c = friends.isConnected(f1, f2);
-  console.log(`\n${f1} and ${f2} are ${c}`);
+  console.log(`${f1} and ${f2} are ${c}`);
 }

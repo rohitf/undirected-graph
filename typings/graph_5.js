@@ -137,5 +137,5 @@ function main() {
         f2 = friends.vertices[1].value;
     }
     var c = friends.isConnected(f1, f2);
-    console.log("\n" + f1 + " and " + f2 + " are " + c);
+    console.log(f1 + " and " + f2 + " are " + c);
 }
