@@ -79,14 +79,6 @@ export class Graph {
     return o;
   }
 
-  //returns graph node by value (student ID)
-  getNodeByValue(nodeValue) {
-    for (var v of this.vertices) {
-      if (v.value == nodeValue)
-        return v;
-    }
-  }
-
   //breadth first search - custom implementation
   bfs(start: number, end: number) {
     var currNode;
@@ -125,6 +117,14 @@ export class Graph {
     return count
   }
 
+  //returns graph node by value (student ID)
+  getNodeByValue(nodeValue) {
+    for (var v of this.vertices) {
+      if (v.value == nodeValue)
+        return v;
+    }
+  }
+
   //reset "visited" status of all nodes
   resetStatus(){
     for (var vertex of this.vertices) {
@@ -132,7 +132,6 @@ export class Graph {
     }
   }
 }
-
 
 //HELPERS
 //read data from file on load
@@ -182,5 +181,5 @@ function main(){
   }
 
   var c = friends.isConnected(f1, f2);
-  console.log(`\n${f1} and ${f2} are ${c}`);
+  console.log(`\n${f1} and ${f2} are ${c}\n`);
 }
